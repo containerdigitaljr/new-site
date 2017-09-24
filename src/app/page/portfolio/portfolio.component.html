@@ -1,0 +1,15 @@
+<header>
+  <picture>
+	<img src="assets/placeholder-image.jpg">
+  </picture>
+  <!-- Title -->
+  <h3 class="center-column">NOSSO PORTFÓLIO</h3>
+</header>
+
+<main class="mdl-grid center-column" id="portfolio">
+  <!-- Content -->
+  <article class="mdl-cell mdl-cell--3-col" *ngFor="let current of content">
+	{{current.image}}
+  </article>
+  <!-- /Content -->
+</main>
