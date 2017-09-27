@@ -4,10 +4,7 @@ h3 {
 	text-align: center;
 	border-bottom: thin solid #c9c9c9;
 	color: #6b6b6b;
-	margin-top: 20px;
-}
-
-.center-column {
-	margin: 0 auto 0 auto;
-	width: 50%;
+	padding-bottom: 5px;
+	margind-bottom: 20px;
+	text-transform: uppercase;
 }

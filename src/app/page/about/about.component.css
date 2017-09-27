@@ -1,7 +1,24 @@
-header {
+header, main {
+	padding-top: 20px;
+	padding-bottom: 30px;
 }
-
 main {
 	background-color: #f5f5f5;
-	height: 500px;
+}
+
+.member > figure {
+	width: 6rem;
+	height: 100%;
+	float: left;
+}
+.member > figure > img {
+	width: 100%;
+	display: block;
+	border-radius: 50%;
+	box-shadow: 8px 10px 20px 0 rgba(46,61,73,.15);
+}
+.member > .description > h4 .job {
+	font-size: 12px;
+	font-style: italic;
+	margin-left: 5px;
 }

@@ -1,10 +1,29 @@
-<header>
-  <h3 class="center-column">A EMPRESA</h3>
-  <p class="center-column">
+<header class="mdl-grid">
+  <h3 class="mdl-cell mdl-cell--8-col mdl-cell--2-offset">A Empresa</h3>
+  <p class="mdl-cell mdl-cell--8-col mdl-cell--2-offset">
 	Mussum Ipsum, cacilds vidis litro abertis. In elementis mé pra quem é amistosis quis leo. Quem manda na minha terra sou euzis! Detraxit consequat et quo num tendi nada. Suco de cevadiss deixa as pessoas mais interessantis. 
   </p>
 </header>
 
-<main>
-  <h3 class="center-column">A EQUIPE</h3>
+<main class="mdl-grid">
+  <h3 class="mdl-cell mdl-cell--8-col mdl-cell--2-offset">
+	A Equipe
+  </h3>
+
+  <div class="mdl-cell mdl-cell--8-col mdl-cell--2-offset" *ngFor="let current of collaborator">
+
+	<!-- Colaborador -->
+	<article class="member">
+	  <figure>
+		<img src="{{collaborator[0].photo}}" alt="{{current.name}}">
+	  </figure>
+	  <div class="description">
+		<h4>{{current.name}}<span class="job">({{current.job}})</span></h4>
+		<p>{{current.text}}</p>
+	  </div>
+	</article>
+	<!-- /Colaborador -->
+	
+  </div>
+  
 </main>
