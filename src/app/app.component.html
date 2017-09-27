@@ -9,7 +9,7 @@
       <!-- Navigation. We hide it in small screens. -->
       <nav class="mdl-navigation mdl-layout--large-screen-only"
 		   *ngFor="let current of menu">
-        <a class="mdl-navigation__link" href="{{current.url}}">{{current.tag}}</a>
+        <a class="mdl-navigation__link" href="{{current.slug}}">{{current.tag}}</a>
       </nav>
     </div>
   </header>
@@ -17,7 +17,9 @@
     <span class="mdl-layout-title">{{title}}</span>
     <nav class="mdl-navigation"
 		 *ngFor="let current of menu">
-      <a class="mdl-navigation__link" href="{{current.url}}">{{current.tag}}</a>
+      <a class="mdl-navigation__link" href="{{current.slug}}">
+		<i class="material-icons">{{current.icon}}</i>{{current.tag}}
+	  </a>
     </nav>
   </div>
   <main class="mdl-layout__content">

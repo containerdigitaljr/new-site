@@ -6,20 +6,23 @@ import { AppComponent }       from './app.component';
 import { PortfolioComponent } from './page/portfolio/portfolio.component';
 import { HomeComponent }      from './page/home/home.component';
 import { AboutComponent }     from './page/about/about.component';
+import { ContactComponent }   from './page/contact/contact.component';
 
 @NgModule({
 	declarations: [
 		AppComponent,
 		PortfolioComponent,
 		HomeComponent,
-		AboutComponent
+		AboutComponent,
+		ContactComponent
 	],
 	imports: [
 		BrowserModule,
 		RouterModule.forRoot([
 			{path: '',          component: HomeComponent},
+			{path: 'contatos',  component: ContactComponent},
 			{path: 'portfolio', component: PortfolioComponent},
-			{path: 'about',     component: AboutComponent},
+			{path: 'sobre',     component: AboutComponent},
 		])
 	],
 	providers: [],

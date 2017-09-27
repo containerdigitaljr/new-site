@@ -9,9 +9,9 @@ export class AppComponent {
 	title = 'CoDi Jr.';
 	icon = "";
 	menu = [
-		{tag: "Home",      url: "/"},
-		{tag: "Sobre",     url: "/sobre"},
-		{tag: "Portfólio", url: "/portfolio"},
-		{tag: "Contato",   url: "/contato"}
+		{tag: "Home",      slug: "/",          icon: "home"},
+		{tag: "Sobre",     slug: "/sobre",     icon: "group"},
+		{tag: "Portfólio", slug: "/portfolio", icon: "collections"},
+		{tag: "Contatos",  slug: "/contatos",  icon: "contacts"}
 	];
 }
