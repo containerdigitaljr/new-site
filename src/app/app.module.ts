@@ -1,5 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule }      from '@angular/core';
+import { NgModule, ApplicationRef } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
+import { AgmCoreModule } from '@agm/core';
 import { RouterModule }  from '@angular/router';
 
 import { AppComponent }       from './app.component';
@@ -13,11 +16,16 @@ import { ContactComponent }   from './page/contact/contact.component';
 		AppComponent,
 		PortfolioComponent,
 		HomeComponent,
-		AboutComponent,
+		AboutComponent,	
 		ContactComponent
 	],
 	imports: [
 		BrowserModule,
+		CommonModule,
+		FormsModule,
+		AgmCoreModule.forRoot({
+			apiKey: 'AIzaSyA9-3yze5W86Rcs1rCCnXMbsnjg0pEIifQ'
+		}),
 		RouterModule.forRoot([
 			{path: '',          component: HomeComponent},
 			{path: 'contatos',  component: ContactComponent},

@@ -1,3 +1,21 @@
 main {
-	margin-bottom: 35px;
+    margin-bottom: 35px;
+}
+
+#content {
+    width: 50%;
+    margin: 0 auto;
+}
+#info {
+    margin-left: calc(50% + 20px);
+    color: #333;
+    line-height: 1.8;
+}
+
+form {
+    width: 50%;
+}
+
+form > .mdl-textfield {
+    width: 100%;
 }

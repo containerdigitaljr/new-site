@@ -1,48 +1,64 @@
-<header style="height: 200px;">
-  
+<header>
+  <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.2885485237434!2d-38.58088804904898!3d-3.7472026443058146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c74bdc41233587%3A0xb17b18df511e0ac4!2sContainer+Digital+Jr.!5e0!3m2!1spt-BR!2sbr!4v1508782112210" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>  
 </header>
 
-<main>
+<main style="margin-top: 50px">
 
-  <form action="#" style="width: 50%; margin: 0 auto;">
-	<!-- Remetente -->
-	<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-      <input class="mdl-textfield__input" type="text" id="name">
-      <label class="mdl-textfield__label" for="name">Nome</label>
-	</div>
-	<!-- /Remetente -->
+  <h3 style="border-bottom: none;">Fale Conosco</h3>
 
-	<!-- Telefone -->
-	<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-      <input class="mdl-textfield__input" type="tel" id="phone">
-      <label class="mdl-textfield__label" for="phone">Telefone</label>
-	</div>
-	<!-- /Telefone -->
+  <div id="content">
+    <form action="#" style="float: left;">
+      <!-- Remetente -->
+      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+	<input class="mdl-textfield__input" type="text" id="name">
+	<label class="mdl-textfield__label" for="name">Nome</label>
+      </div>
+      <br>
+      <!-- /Remetente -->
 
-	<!-- E-Mail -->
-	<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-      <input class="mdl-textfield__input" type="email" id="email">
-      <label class="mdl-textfield__label" for="email">E-mail</label>
-	</div>
-	<!-- /E-Mail -->
+      <!-- Telefone -->
+      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+	<input class="mdl-textfield__input" type="tel" id="phone">
+	<label class="mdl-textfield__label" for="phone">Telefone</label>
+      </div>
+      <br>
+      <!-- /Telefone -->
 
-	<!-- Texto -->
-	<div class="mdl-textfield mdl-js-textfield">
-      <textarea class="mdl-textfield__input" type="text" rows= "5" id="message" ></textarea>
-      <label class="mdl-textfield__label" for="message">Mensagem...</label>
-	</div>
-	<!-- /Texto -->
+      <!-- E-Mail -->
+      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+	<input class="mdl-textfield__input" type="email" id="email">
+	<label class="mdl-textfield__label" for="email">E-mail</label>
+      </div>
+      <br>
+      <!-- /E-Mail -->
 
-	<!-- Botões -->
-	<div>
-	  <button class="mdl-button mdl-js-button" style="float: left; margin-right: 15px;">
-		Limpar
-	  </button>
-	  <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
-		Enviar
-	  </button>
-	</div>
-	<!-- /Botões -->
-  </form>
+      <!-- Texto -->
+      <div class="mdl-textfield mdl-js-textfield">
+	<textarea class="mdl-textfield__input" type="text" rows= "5" id="message" ></textarea>
+	<label class="mdl-textfield__label" for="message">Mensagem...</label>
+      </div>
+      <!-- /Texto -->
+
+      <!-- Botões -->
+      <div style="margin-bottom: 50px;">
+	<button class="mdl-button mdl-js-button" style="float: left; margin-right: 15px;">
+	  Limpar
+	</button>
+	<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+	  Enviar
+	</button>
+      </div>
+      <!-- /Botões -->
+    </form>
+    <div id="info">
+      <strong>Endereço:</strong><br>
+      Fortaleza - Campus do Pici<br>
+      Centro de Ciências - Bloco 1430<br>
+      Cep: 60000-000<br>
+      <br>
+      <strong>Contato:</strong><br>
+      containerdigitaljr@gmail.com<br>
+    </div>
+  </div>
   
 </main>

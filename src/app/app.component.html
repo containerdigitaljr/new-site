@@ -8,7 +8,7 @@
       <div class="mdl-layout-spacer"></div>
       <!-- Navigation. We hide it in small screens. -->
       <nav class="mdl-navigation mdl-layout--large-screen-only"
-		   *ngFor="let current of menu">
+	   *ngFor="let current of menu">
         <a class="mdl-navigation__link" href="{{current.slug}}">{{current.tag}}</a>
       </nav>
     </div>
@@ -16,30 +16,30 @@
   <div class="mdl-layout__drawer">
     <span class="mdl-layout-title">{{title}}</span>
     <nav class="mdl-navigation"
-		 *ngFor="let current of menu">
+	 *ngFor="let current of menu">
       <a class="mdl-navigation__link" href="{{current.slug}}">
-		<i class="material-icons">{{current.icon}}</i>{{current.tag}}
-	  </a>
+	<i class="material-icons">{{current.icon}}</i>{{current.tag}}
+      </a>
     </nav>
   </div>
   <main class="mdl-layout__content">
     <div class="page-content">
 
-	  <router-outlet></router-outlet>
+      <router-outlet></router-outlet>
 
-	  <!-- Footer -->
-	  <footer class="mdl-mini-footer">
-		<div class="mdl-mini-footer__left-section">
-		  <div class="mdl-logo">{{title}}</div>
-		  <ul class="mdl-mini-footer__link-list">
-			<li *ngFor="let current of menu">
-			  <a href="{{current.url}}">{{current.tag}}</a>
-			</li>
-		  </ul>
-		</div>
-	  </footer>
-	  <!-- /Footer -->
-
+      <!-- Footer -->
+      <footer class="mdl-mini-footer">
+	<div class="mdl-mini-footer__left-section">
+	  <div class="mdl-logo">{{title}}</div>
+	  <ul class="mdl-mini-footer__link-list">
+	    <li *ngFor="let current of menu">
+	      <a href="{{current.url}}">{{current.tag}}</a>
+	    </li>
+	  </ul>
 	</div>
+      </footer>
+      <!-- /Footer -->
+
+    </div>
   </main>
 </div>
